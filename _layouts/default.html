@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+
+    <!-- For post layout, we need to find the icon in this way -->
+    <link rel="icon" type="image/gif" href="../../../assets/ed.gif" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/scss/main.css" />
+  </head>
+  <body class="hack dark main container">
+    <!-- links -->
+    <header>
+      <a href="{{ site.baseurl }}/index.html">Blog</a>
+      <a href="{{ site.baseurl }}/media.html">Media</a>
+      <a href="{{ site.basseurl }}/feed.atom">RSS</a>
+      <a href="{{ site.baseurl }}/about.html">About</a>
+    </header>
+
+    {{ content }}
+  </body>
+</html>
+

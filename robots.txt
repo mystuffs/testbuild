@@ -1,0 +1,7 @@
+# robots.txt for rily's blog
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: *
+Disallow: /

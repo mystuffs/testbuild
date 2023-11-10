@@ -1,0 +1,23 @@
+title: rily
+email: 9nty4kdw@anonaddy.me
+baseurl: ""
+url: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+feed:
+  path: "/feed.atom"
+
+paginate: 10
+paginate_path: "/page/:num/"
+
+sass:
+  style: compressed
+
+webrick:
+  headers:
+    Cache-Control: no-cache, no-store, must-revalidate
+    Expires: 0
+    X-Frame-Options: "SAMEORIGIN"
