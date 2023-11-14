@@ -1,0 +1,26 @@
+#+options: toc:nil
+
+* pur
+A script to retrive information about packages from AUR.
+
+* Usage
+To get the general commands information, run =pur --help=.
+#+begin_src text
+  Markers:
+  --packages, --versions, --votes, --popularities, --descriptions,
+  --maintainers, --last-updates
+#+end_src
+The list of above commands are called markers. They're used to specify which type of information we're looking for.
+
+=--packages=      Request a list of package name based on the query\\
+=--versions=      Request a list of package version based on the query\\
+=--votes=         Request a list of package vote based on the query\\
+=--popularities=  Request a list of package popularity based on the query\\
+=--descriptions=  Request a list of package description based on the query\\
+=--maintainers=   Request a list of package maintainer based on the query\\
+=--last-updates=  Request a list of package last updates based on the query
+
+Here are few examples.
+#+begin_src bash
+  python3 pur.py --packages --query zsh --query-by nd --per-page 20
+#+end_src
